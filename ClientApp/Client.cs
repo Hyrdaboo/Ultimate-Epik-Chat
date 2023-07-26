@@ -63,8 +63,16 @@ namespace ClientApp
 
         public void SendMessage(string message)
         {
-            writer.WriteLine(Name + ": " + message);
-            writer.Flush();
+            try
+            {
+                writer.WriteLine(Name + ": " + message);
+                writer.Flush();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Connection to server lost! You can quit the application.");
+                Disconnect();
+            }
         }
 
         public void Disconnect()

@@ -10,7 +10,7 @@
 A simple chat app I made to learn about network programming in C#. There are 2 parts to the application the server and the client. Someone will have to host the server and others can join the server using the server address. Functions as a basic global chat.
 
 # How to use
-You can use the precompiled binaries in the <a href="ReleaseLink">releases</a> or if you want to compile the code yourself: <br>
+You can use the precompiled binaries in the <a href="https://github.com/Hyrdaboo/Ultimate-Epik-Chat/releases/download/v1.0/Build.zip">releases</a> or if you want to compile the code yourself: <br>
 
 * Clone this repo
 * Download and install <a href="https://dotnet.microsoft.com/en-us/download">.NET 6.0</a> if you haven't

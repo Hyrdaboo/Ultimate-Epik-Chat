@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NullLib.ConsoleEx" Version="1.0.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="res\english-adjectives.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using NullLib.ConsoleEx;
+using System.Net.Sockets;
 
 namespace ClientApp
 {
@@ -50,7 +51,7 @@ namespace ClientApp
                         int index = name.Length + 2;
                         msg = "You: " + msg.Substring(index, msg.Length - index);
                     }
-                    Console.WriteLine(msg);
+                    ConsoleSc.WriteLine(msg);
                 }
                 catch (Exception)
                 {

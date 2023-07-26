@@ -1,4 +1,6 @@
 ﻿
+using NullLib.ConsoleEx;
+
 namespace ClientApp
 {
     internal class Program
@@ -60,7 +62,7 @@ namespace ClientApp
 
             while (client.Connected)
             {
-                string line = Console.ReadLine();
+                string line = ConsoleSc.ReadLine();
                 DeletePrevConsoleLine();
                 if (string.IsNullOrEmpty(line)) continue;
                 if (line[0] == 24)

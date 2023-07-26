@@ -7,4 +7,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NullLib.ConsoleEx" Version="1.0.4.4" />
+  </ItemGroup>
+
 </Project>

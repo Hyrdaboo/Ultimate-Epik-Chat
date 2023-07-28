@@ -30,14 +30,12 @@ namespace Server
 
         static void Main(string[] args)
         {
-            GetUserInput("What is the server address: ", "", (data) =>
+            GetUserInput("What port should the server listen on: ", "", (data) =>
             {
                 try
                 {
-                    string[] tokens = data.Split(':');
-                    string ip = tokens[0];
-                    int port = int.Parse(tokens[1]);
-                    Server.Start(ip, port);
+                    int port = int.Parse(data);
+                    Server.Start(port);
                     return true;
                 }
                 catch (Exception ex)

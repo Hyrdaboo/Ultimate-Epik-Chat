@@ -11,11 +11,11 @@ namespace Server
 
         private static readonly string title = "      ______    _ ___ __    __ _ ___       __    _ ___\r\n| ||   |  | |V||_| | |_    |_ |_) | |/    /  |_||_| | \r\n|_||__ | _|_| || | | |__   |__|  _|_|\\    \\__| || | | \r\n";
 
-        public static void Start(string ip, int port)
+        public static void Start(int port)
         {
-            listener = new TcpListener(IPAddress.Parse(ip), port);
+            listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
-            Console.WriteLine($"Server started on adress {ip}:{port}");
+            Console.WriteLine($"Server listening on port {port}");
             StartAcceptingClients();
         }
 

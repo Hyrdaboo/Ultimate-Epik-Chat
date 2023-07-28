@@ -31,9 +31,9 @@ namespace ClientApp
 
                 HandleMessagesFromServer();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine($"Couldn't connect to {ip}:{port}\n");
+                Console.WriteLine($"Couldn't connect to {ip}:{port}. Reason: {ex.Message}\n");
             }
             return Connected;
         }
